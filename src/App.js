@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import html2canvas from "html2canvas";
 function App() {
+  /* 
+    Takes screenshot of html body and prints 64 bit url in browser console
+  */
+  const test = () => {
+    html2canvas(document.body).then((canvas) => {
+      const base64image = canvas.toDataURL("image/png");
+      console.log(base64image);
+    });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Button triggers screenshot, output is sent to browser console */}
+      <button onClick={test}>Button</button>
     </div>
   );
 }
