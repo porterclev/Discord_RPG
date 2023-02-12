@@ -1,5 +1,8 @@
 import "./App.css";
 import html2canvas from "html2canvas";
+import Message from "./views/button.js";
+import Unity from "./views/unity";
+
 function App() {
   /* 
     Takes screenshot of html body and prints 64 bit url in browser console
@@ -14,7 +17,8 @@ function App() {
   return (
     <div className="App">
       {/* Button triggers screenshot, output is sent to browser console */}
-      <button onClick={test}>Button</button>
+      <Message />
+      <Unity />
     </div>
   );
 }
