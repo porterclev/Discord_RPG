@@ -1,5 +1,5 @@
 # Discord_RPG
 
-Website will host a game and be synced with a discord bot to create a sudo multiplayer experience.
+Website is host a Unity WebGL game and is synced with a discord bot that creates a sudo multiplayer experience.
 
 Discord Bot: https://github.com/porterclev/Discord-Bot
